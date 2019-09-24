@@ -1,0 +1,24 @@
+{
+	"if": {
+		"prefix": "<% if %>",
+		"body": [
+			"<% if ${1:foo == 'a'} %>",
+			"    ${2:puts 'a'}",
+			"<% elsif ${3:foo == 'b'} %>",
+			"    ${4:puts 'b'}'",
+			"<% else %>",
+			"    ${5:puts foo}",
+			"<% end %>",
+		],
+		"description": "if"
+	},
+	"each": {
+		"prefix": "<% each %>",
+		"body": [
+			"<% ${1:obj}.each do |${2:val}| %>",
+			"    <%= ${3:val} %>",
+			"<% end %>",
+		],
+		"description": "each"
+	}
+}
