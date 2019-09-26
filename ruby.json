@@ -20,5 +20,23 @@
 			"end",
 		],
 		"description": "each"
-	}
+	},
+    "times": {
+        "prefix": "times",
+        "body": [
+            "${1:10}.times do |${2:i}|",
+            "    ${0:puts 'hello'}",
+            "end"
+        ],
+        "description": "times"
+    },
+    "def": {
+        "prefix": "def",
+        "body": [
+            "def ${1:hello}(${2:name})",
+            "    ${0:puts 'hello ' + name }",
+            "end"
+        ],
+        "description": "def"
+    }
 }
