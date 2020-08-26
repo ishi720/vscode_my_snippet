@@ -1,0 +1,29 @@
+{
+    "select": {
+        "prefix": "SELECT",
+        "body": [
+            "SELECT ${1:*}",
+            "FROM ${2:tableName}",
+            "WHERE ${3:1}",
+            "LIMIT ${4:100};"
+        ],
+        "description": "mySnippets"
+    },
+    "insert": {
+        "prefix": "INSERT",
+        "body": [
+            "INSERT INTO ${1:tableName} ( ${2:columnName1} ${3:, ...} )",
+            "VALUES ( ${4:value1} ${5:, ...} );"
+        ],
+        "description": "mySnippets"
+    },
+    "update": {
+        "prefix": "UPDATE",
+        "body": [
+            "UPDATE ${1:tableName}",
+            "SET ${2:column} = ${3:value}",
+            "WHERE ${4:column} = ${5:value};",
+        ],
+        "description": "mySnippets"
+    }
+}
